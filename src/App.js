@@ -4,7 +4,7 @@ import NewPin from "./components/NewPin";
 import "bulma/css/bulma.css";
 import "./App.css";
 import axios from "axios";
-import { BrowserRouter as Router } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import { DropTarget } from "react-drag-drop-container";
 
 // ,"heroku-postbuild": "npm run build"

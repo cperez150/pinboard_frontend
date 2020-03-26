@@ -36,6 +36,10 @@ class NewPin extends Component {
     this.setState({ creator: event.currentTarget.value });
   }
 
+  clicked = event => {
+    console.log("submit button was clicked");
+  };
+
   async handleSubmit(event) {
     event.preventDefault();
     const response = await axios.post(`${this.props.baseURL}/pins`, {
@@ -146,6 +150,7 @@ class NewPin extends Component {
               className="button is-success"
               type="submit"
               value="Add Pin"
+              onClick={this.clicked}
             />
             <button
               className="button"
