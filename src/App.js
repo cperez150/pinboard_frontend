@@ -8,6 +8,10 @@ import { BrowserRouter as Router } from "react-router-dom";
 import { DropTarget } from "react-drag-drop-container";
 
 // ,"heroku-postbuild": "npm run build"
+/*   "start": "react-scripts start",
+"build": "react-scripts build",
+"test": "react-scripts test",
+"eject": "react-scripts eject"*/
 
 //ICONS
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
