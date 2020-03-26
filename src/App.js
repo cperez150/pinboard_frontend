@@ -20,6 +20,7 @@ const trashIcon = <FontAwesomeIcon icon={faTrashAlt} size="2x" />;
 
 //URL
 let baseURL = process.env.REACT_APP_BASEURL;
+const proxyurl = "https://cors-anywhere.herokuapp.com/";
 if (process.env.NODE_ENV === "development") {
   baseURL = "http://localhost:3001";
 } else {
@@ -66,7 +67,7 @@ class App extends React.Component {
   }
 
   async getPins() {
-    const response = await axios.get(`${baseURL}/pins`);
+    const response = await axios.get(proxyurl + `${baseURL}/pins`);
     const data = response.data;
     this.setState({
       pins: data
