@@ -1,0 +1,180 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,700i,900|Muli:400,500,700,800&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Sofia&display=swap");
+/* font-family: "Montserrat", sans-serif; */
+/* font-family: "Muli", sans-serif; */
+
+body {
+  margin: 5px;
+}
+
+.logo {
+  margin-top: 12px;
+  margin-bottom: -10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.sticky {
+  z-index: 100;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: white;
+  box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.sticky + .content {
+  padding-top: 15px;
+  box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.pinImage {
+  margin: 0px auto;
+  text-align: center;
+  max-width: 100%;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  margin: 0px auto;
+}
+
+img.logo {
+  text-align: center;
+  max-width: 30%;
+  height: auto;
+  margin-left: 35%;
+}
+
+.my-masonry-grid {
+  z-index: -1;
+  display: -webkit-box; /* Not needed if autoprefixing */
+  display: -ms-flexbox; /* Not needed if autoprefixing */
+  display: flex;
+  margin-left: -10px; /* gutter size offset */
+  margin-top: 170px;
+  width: auto;
+}
+.my-masonry-grid_column {
+  padding-left: 20px; /* gutter size */
+  background-clip: padding-box;
+}
+
+.pinCard {
+  margin-top: 10px;
+  box-sizing: border-box;
+  text-align: left;
+  background: white;
+  font-family: "Muli", sans-serif;
+  font-size: 13px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.pinCardTitle {
+  height: 40px;
+  color: white;
+  text-align: left;
+  padding-top: 10px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.pinInfo {
+  margin: 0px auto;
+  text-align: center;
+}
+
+header {
+  text-align: center;
+}
+
+.websiteCreator {
+  margin-top: 40px;
+  text-align: center;
+  font-size: 10px;
+}
+
+@media (max-width: 800px) {
+  .my-masonry-grid {
+    margin-left: -15px; /* gutter size offset */
+  }
+  .my-masonry-grid_column {
+    padding-left: 15px; /* gutter size offset */
+  }
+  .my-masonry-grid_column > div {
+    margin-bottom: 15px; /* space between items */
+  }
+}
+
+.pinDetails {
+  background-color: white;
+}
+
+.parentHome {
+  margin-top: 6px;
+  margin-bottom: 5px;
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  min-width: 400px;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  flex-shrink: 0;
+  overflow: auto;
+}
+
+.child1 {
+  width: 70%;
+}
+
+.child2,
+.child3 {
+  width: 8%;
+  margin: 10px 0px;
+  flex-basis: content;
+  display: flex;
+  flex-shrink: 0;
+}
+
+.child--featured {
+  flex-shrink: 1;
+}
+
+.imgPinDetails {
+  max-width: 70%;
+  height: auto;
+  margin: 0px auto;
+}
+
+.modal {
+  z-index: 100001 !important;
+}
+
+.addNewPin {
+  width: 100%;
+  text-align: left;
+  flex-shrink: 0;
+}
+
+.showPin {
+  margin-left: 300px;
+}
+.hero {
+  margin-top: 50px;
+  margin-bottom: -150px;
+  height: 250px;
+}
+
+.title {
+  margin-top: 80px;
+}
+
+/* .addPinbtn {
+  margin-right: 20px;
+/* }* */
+
+.droptarget {
+  margin-top: 3px;
+  margin-left: 35px;
+}
