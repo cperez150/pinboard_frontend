@@ -42,13 +42,16 @@ class NewPin extends Component {
 
   async handleSubmit(event) {
     event.preventDefault();
-    const response = await axios.post(`${this.props.baseURL}/pins`, {
-      title: this.state.title,
-      img: this.state.img,
-      description: this.state.description,
-      creator: this.state.creator,
-      category: this.state.category
-    });
+    const response = await axios.post(
+      this.props.proxyurl + `${this.props.baseURL}/pins`,
+      {
+        title: this.state.title,
+        img: this.state.img,
+        description: this.state.description,
+        creator: this.state.creator,
+        category: this.state.category
+      }
+    );
     this.setState({
       img: "",
       description: "",

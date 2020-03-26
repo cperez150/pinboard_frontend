@@ -149,6 +149,7 @@ class App extends React.Component {
                           handleNewPin={this.handleNewPin}
                           togglePopUp={this.togglePopUp}
                           baseURL={baseURL}
+                          proxyurl={proxyurl}
                         />
                       </section>
                     </div>
