@@ -15,12 +15,12 @@ import { faTrashAlt } from "@fortawesome/free-solid-svg-icons";
 const trashIcon = <FontAwesomeIcon icon={faTrashAlt} size="2x" />;
 
 //URL
-// let baseURL = process.env.REACT_APP_BASEURL;
-// if (process.env.NODE_ENV === "development") {
-//   baseURL = "http://localhost:3001";
-// } else {
-let baseURL = "https://sleepy-harbor-02264.herokuapp.com";
-// }
+let baseURL = process.env.REACT_APP_BASEURL;
+if (process.env.NODE_ENV === "development") {
+  baseURL = "http://localhost:3001";
+} else {
+  baseURL = "https://sleepy-harbor-02264.herokuapp.com";
+}
 
 class App extends React.Component {
   constructor(props) {
