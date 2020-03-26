@@ -44,6 +44,7 @@ class Pins extends Component {
                         pin={pin}
                         getPins={this.props.getPins}
                         baseURL={this.props.baseURL}
+                        proxyurl={this.props.proxyurl}
                       />
                     )}
                   />

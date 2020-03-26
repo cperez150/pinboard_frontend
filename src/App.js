@@ -78,14 +78,14 @@ class App extends React.Component {
   async handleDeleteonDrop(event, pin) {
     const pinId = pin.id;
     console.log(pinId);
-    await axios.delete(`${baseURL}/pins/${pinId}`);
+    await axios.delete(proxyurl + `${baseURL}/pins/${pinId}`);
     this.getPins();
   }
 
   // //GET FILTERED PINS FOR TRAVEL
   async getFilteredPins(categoryName, description) {
     console.log("clicked");
-    const response = await axios.get(`${baseURL}/pins`);
+    const response = await axios.get(proxyurl + `${baseURL}/pins`);
     const data = response.data;
     console.log("data for filtered pins");
     this.setState({
@@ -316,6 +316,7 @@ class App extends React.Component {
                 handleDeleteonDrop={this.handleDeleteonDrop}
                 getPins={this.getPins}
                 baseURL={baseURL}
+                proxyurl={proxyurl}
               />
             </div>
           )}

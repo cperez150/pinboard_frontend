@@ -88,6 +88,7 @@ class ShowPin extends Component {
                 getPins={this.props.getPins}
                 update={this.props.update}
                 base={this.props.baseURL}
+                proxyurl={this.props.proxyurl}
               />
             </div>
             <Link to="/">

@@ -45,7 +45,8 @@ class EditPin extends Component {
     console.log("Clicked Submit");
     try {
       event.preventDefault();
-      const url = `${this.props.baseURL}/pins/${this.props.pin.id}`;
+      const url =
+        this.props.proxyurl + `${this.props.baseURL}/pins/${this.props.pin.id}`;
       const reload = {
         title: this.state.title,
         description: this.state.description,
