@@ -19,7 +19,7 @@
     "react-drag-drop-container": "^6.1.1",
     "react-masonry-css": "^1.0.14",
     "react-router-dom": "^5.1.2",
-    "react-scripts": "3.3.0",
+    "react-scripts": "^3.4.0",
     "react-sharingbuttons": "^1.0.0",
     "react-stonecutter": "^0.3.10"
   },
