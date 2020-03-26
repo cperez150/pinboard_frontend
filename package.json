@@ -24,10 +24,7 @@
     "react-stonecutter": "^0.3.10"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "start": "node app"
   },
   "eslintConfig": {
     "extends": "react-app"
