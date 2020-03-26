@@ -7,6 +7,8 @@ import axios from "axios";
 import { BrowserRouter as Router } from "react-router-dom";
 import { DropTarget } from "react-drag-drop-container";
 
+// ,"heroku-postbuild": "npm run build"
+
 //ICONS
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTrashAlt } from "@fortawesome/free-solid-svg-icons";
